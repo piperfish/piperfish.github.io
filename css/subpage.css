@@ -1,0 +1,162 @@
+.subpage-content {
+    display: flex;
+    justify-content: space-between;
+
+    /* spacing */
+    margin: 22vh 4.2vw 4vw 4.2vw;
+    padding: 4vw 4.8vw 4vw 4.8vw;
+
+    /* border style */
+    border: double 3px transparent;
+    border-radius: 50px;
+
+    /* background style */
+    background-image: linear-gradient(#FDF7F4, #FDF7F4), radial-gradient(circle at top left, #4a4e6985, #4A4E69, #4a4e6976);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+}
+
+    .breadcrumb {
+        align-items: center;
+        width: fit-content;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 1px 1px #4A4E69;
+    }
+
+        .breadcrumb p {
+            padding: 0.5em;
+            font-size: 1vw;
+        }
+
+        .breadcrumb a {
+            color: #22223B;
+        }
+        
+        .breadcrumb a:hover {
+            color: #9A8C98;
+        }
+
+
+    .subpage-text * { /* applied to all child texts */
+        margin: 0.6em 0 1em 0; /* margin proportional to font size */
+    }
+
+    .subpage-text {
+        width: 45vw;
+        color: #22223B;
+    }
+
+        .subpage-text h1 {
+            /* e.g. "91027 - Apply algebra..." */
+            font-size: 2.6vw;
+            font-weight: 500;
+            color: #4A4E69;
+        }
+
+        .subpage-text h3 {
+            font-size: 1.4vw;
+        }
+
+        .subpage-text p {
+            font-size: 1.2vw;
+        }
+
+        .subpage-text ul li a{
+            color: #4A4E69;
+            font-size: 1vw;
+        }
+
+        .subpage-text ul li a:hover{
+            color: #9A8C98;
+        }
+
+
+    .quiz {        
+        /* position */
+        align-self: flex-end;
+
+        /* dimension */
+        width: 20vw;
+        height: fit-content;
+
+        padding: 1vw;
+
+        /* border style */
+        border-radius: 30px;
+
+        background-color: #fff;
+        box-shadow: 3px 3px 5px #4A4E69;
+    }
+
+        .quiz h2 {
+            margin: 1.25vw 0px 1.25vw 1.75vw;
+            font-weight: 400;
+            font-size: 1.75vw;
+        }
+
+        .quiz hr {
+            color: #4A4E69;
+            margin-bottom: 0.5vw;
+        }
+
+        .quiz p {
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 1.1vw;
+        }
+
+        .quiz .option {
+            padding: 1vw;
+        }
+
+            .quiz .option ul {
+                list-style: none;
+
+                /* 2 x 2 table */
+                padding: 0;
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr;
+                row-gap: 7px;
+                column-gap: 7px;
+            }
+
+                .quiz .option ul li {
+                    padding: 10px;
+                    font-size: 1vw;
+                    background-color: #e2e2e28e;
+                    border-radius: 10px;
+                    color: #4A4E69;
+                }
+
+                input[type="radio"] {
+                    appearance: none;
+                    border: 1px solid #4A4E69;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    height: 1em;
+                    width: 1em;
+                }
+
+                input[type="radio"]:checked {
+                    background-color: #4A4E69;
+                }
+                
+
+        .quiz button {
+            /* position */
+            margin: 0.75vw 0px 1.5vw 75%;
+            padding: 6px;
+
+            /* colours */
+            color: #fff;
+            background-color: #4A4E69;
+
+            /* border style */
+            border: none;
+            border-radius: 8px;
+            
+            cursor: pointer;
+            font-size: 0.9vw;
+        }

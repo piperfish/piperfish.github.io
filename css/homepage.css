@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Licorice&family=Outfit:wght@100..900&family=Shadows+Into+Light+Two&display=swap');
+
+/* universal */
+* {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+}
+
+body {
+    padding: 1%;
+    background-color: #FDF7F4;
+}
+
+
+.showcase {
+    height: 75vh;
+
+    /* border style */
+    border: 1px solid #fff;
+    border-radius: 50px;
+
+    /* background style */
+    background: linear-gradient(
+        180deg,
+        rgba(34, 34, 59, 0.9) 5%,
+        rgba(74, 78, 105, 0.8) 25%,
+        rgba(128, 119, 131, 0.8) 50%,
+        rgba(201, 173, 167, 0.75) 80%,
+        rgba(242, 233, 228, 0.9) 100%),
+        url(../images/vector.png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    /* text colour */
+    color: rgba(225, 225, 225, 0.75);
+
+    z-index: -1; /* below nav bar */
+}
+
+    /* text positions */
+    .showcase h1, 
+    .showcase h3 {
+        margin-left: 7vw;
+    }
+    
+    .showcase h1 { /* "Helping you find..." */
+        font-size: 3vw;
+    }
+
+        .showcase h1 em{
+            color: #fff;
+        }
+
+    .showcase h3 { /* "Discover the NCEA..." */
+        margin-top: 28vh;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 1.5vw;
+    }
+
+    .showcase p { /* Einstein's quote */
+        margin-left: 70vw;
+        margin-top: 5vh;
+        font-family: "Licorice", serif;
+        font-size: 2vw;
+        color: #fff;
+    }
+
+
+.wrapper { /* contains boxes */
+    display: flex;
+    gap: 1vw;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+}
+
+.box {
+    /* dimension */
+    width: 32vw;
+    height: 15vh;
+
+    padding: 20px 35px 20px 35px;
+
+    /* border style */
+    border: 1px solid rgba(184, 184, 184, 0.4);
+    border-radius: 40px;
+
+    background: rgba(242, 233, 228, 0.4);
+    box-shadow: 0px 4px 4px #C9ADA7;
+
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translate3d(1px, 2px, 0px); 
+    box-shadow: none;
+}
+
+    .box h2 {
+        margin: 2vh 0px 2vh 1vw;
+        font-weight: 500;
+        font-size: 3vh;
+        color: #4A4E69;
+    }
+
+    .box p {
+        color: #22223B;
+        font-size: 1.1vw;
+    }
+
