@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official website for Department of Mathematics">
+    <meta name="keywords" content="TGS, Takapuna Grammar, Mathematics">
+    <meta name="author" content="Robert Park">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TGS Department of Mathematics</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/parentpage.css">
+    <link rel="stylesheet" href="css/subpage.css">
+
+    <!-- Link to Javascript -->
+    <script src='js/functions.js'></script>
+</head>
+
+<body>
+
+    <div class= "header" id="header">
+        <div class="top">
+    <div class="logo">
+        <a href="index.php?page=home"><img src="images/logo.jpg" alt="school logo"></a>
+    </div>
+
+    <div class="title">
+        <p class="title-upper">Department of</p>
+        <p class="title-lower">Mathematics</p>
+    </div>
+</div>
+
+<div class="nav">
+
+    <ul>
+        <li>
+            <a href="index.php?page=parentpages/level_one">Level 1 &#x25BE;</a>
+            <ul class="dropdown">
+                <li><a href="index.php?page=subpages/1.2_algebra">1.2 Algebra</a></li>
+                <li><a href="index.php?page=subpages/1.3_teg">1.3 TEG</a></li>
+                <li><a href="index.php?page=subpages/1.6_geometry">1.6 Geometry</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="index.php?page=parentpages/level_two">Level 2  &#x25BE;</a>
+            <ul class="dropdown">
+                <li><a href="index.php?page=subpages/2.6_algebra">2.6 Algebra</a></li>
+                <li><a href="index.php?page=subpages/2.7_calculus">2.7 Calculus</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="index.php?page=parentpages/level_three">Level 3  &#x25BE;</a>
+            <ul class="dropdown">
+                <li><a href="index.php?page=subpages/3.5_complex">3.5 Complex Numbers</a></li>
+                <li><a href="index.php?page=subpages/3.6_diff">3.6 Differentation</a></li>
+                <li><a href="index.php?page=subpages/3.7_int">3.7 Integration</a></li>
+            </ul>
+        </li>
+        <li><a href="index.php?page=parentpages/scholarship">Scholarship</a></li>
+        <li><a href="index.php?page=parentpages/competition">Competition</a></li>
+    </ul>
+
+</div> <!-- / nav -->
+    </div>
+
+        <div class="banner">
+        
+        <h1>Level 2 Calculus (L2MAC)</h1>
+
+        <div class="slides" id="slides">
+
+                                <img class="slide" src="images/class/MAC_1.jpg" alt="class photo">
+                                        <img class="slide" src="images/class/MAC_2.jpg" alt="class photo">
+                                        <img class="slide" src="images/class/MAC_3.jpg" alt="class photo">
+                                        <img class="slide" src="images/class/MAC_4.jpg" alt="class photo">
+                                        <img class="slide" src="images/class/MAC_5.jpg" alt="class photo">
+                    
+        </div>
+
+        <div class="buttons">
+            <button id="prev" onclick="prevSlide()">&lt;</button>
+            <button id="next" onclick="nextSlide()">&gt;</button>
+        </div>
+        
+    </div>
+
+    <div class="blocks">
+
+        <div class="block" onclick="location.href='index.php?page=subpages/2.6_algebra'">
+            <h1>2.6</h1>
+            <p>Algebra</p>
+        </div>        
+
+        <div class="block" onclick="location.href='index.php?page=subpages/2.7_calculus'">
+            <h1>2.7</h1>
+            <p>Calculus</p>
+        </div>        
+
+    </div>
+
+    <div class="summary">
+
+        <div class="text-left">
+            <h2>Course Outline</h2>
+            <p>• Level 2 Mathematics with Calculus</p>
+        </div>
+    
+        <div class="vr"></div>
+        
+        <p>L2MAC covers two of the NCEA Level 2 Mathematics externally assessed standards and 
+        two internally assessed standards. It is possible to obtain a maximum of 16 credits. By the
+        end of this course, students will have developed sufficient knowledge and skills to solve problems 
+        by applying algebraic, calculus, graphical and trigonometric methods.</p>
+
+    </div>
+
+    <script>
+        setInterval(nextSlide, 4000); // auto slideshow
+    </script>
+    <footer>
+        <div class="footer-left">
+    <img src="images/logo.jpg" alt="school logo">
+    <div class="title">
+        <p>Takapuna Grammar School</p>
+        <p>Department of Mathematics</p>
+    </div>
+</div>
+
+<div class="footer-middle">
+    <h3>Relevant Websites</h3>
+    <ul>
+        <li><a href="http://takapuna.school.nz">Takapuna Grammar School</a></li>
+        <li><a href="https://www2.nzqa.govt.nz">NZQA Official Website</a></li>
+        <li><a href="https://sites.google.com/tgs.school.nz/tgsmaths">Old TGS Mathematics</a></li>
+    </ul>
+</div>
+
+<div class="footer-right">
+
+    <h3>How to Contact Us</h3>
+    
+    <p>For any general inquiries about the department, feel free to contact the Head of Department, 
+        <a href="mailto:d.menzies@tgs.school.nz">Mr Daniel Menzies</a>
+    </p>
+
+</div>
+
+
+    </footer>
+
+</body>
+
+</html>
